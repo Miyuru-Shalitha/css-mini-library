@@ -15,3 +15,21 @@
         box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
     }
 }
+
+@mixin formInput {
+    padding: $default-padding;
+    border-radius: $default-border-radius;
+}
+
+@mixin formLabel {
+    display: block;
+    font-size: $input-label;
+    transform: translate(0, -5.5rem);
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+@mixin fomrLabelTranslate {
+    transform: translate(1rem, -3rem);
+    opacity: 0;
+}

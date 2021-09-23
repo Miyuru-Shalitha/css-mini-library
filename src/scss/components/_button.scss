@@ -127,7 +127,7 @@
 .btn-a-primary-out {
     background-color: transparent;
     color: $color-primary;
-    box-shadow: 0 0 1px 1px $color-primary;
+    box-shadow: 0 0 0 1px $color-primary;
 
     &:hover {
         background-color: $color-primary-light;
@@ -145,7 +145,7 @@
 .btn-a-secondary-out {
     background-color: transparent;
     color: $color-secondary;
-    box-shadow: 0 0 1px 1px $color-secondary;
+    box-shadow: 0 0 0 1px $color-secondary;
 
     &:hover {
         background-color: $color-secondary-light;
@@ -163,7 +163,7 @@
 .btn-a-tertiary-out {
     background-color: transparent;
     color: $color-tertiary;
-    box-shadow: 0 0 1px 1px $color-tertiary;
+    box-shadow: 0 0 0 1px $color-tertiary;
 
     &:hover {
         background-color: $color-tertiary-light;

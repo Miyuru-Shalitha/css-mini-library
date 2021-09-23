@@ -1,0 +1,49 @@
+.form {
+    // Input primary
+    &__input--primary {
+        @include formInput;
+        border: 1px solid $color-primary;
+        outline-color: $color-primary;
+    }
+
+    &__label--primary {
+        color: $color-primary;
+        @include formLabel;
+    }
+
+    &__input--primary:placeholder-shown + &__label--primary {
+        @include fomrLabelTranslate;
+    }
+
+    // Input secondary
+    &__input--secondary {
+        @include formInput;
+        border: 1px solid $color-secondary;
+        outline-color: $color-secondary;
+    }
+
+    &__label--secondary {
+        color: $color-secondary;
+        @include formLabel;
+    }
+
+    &__input--secondary:placeholder-shown + &__label--secondary {
+        @include fomrLabelTranslate;
+    }
+
+    // Input tertiary
+    &__input--tertiary {
+        @include formInput;
+        border: 1px solid $color-tertiary;
+        outline-color: $color-tertiary;
+    }
+
+    &__label--tertiary {
+        color: $color-tertiary;
+        @include formLabel;
+    }
+
+    &__input--tertiary:placeholder-shown + &__label--tertiary {
+        @include fomrLabelTranslate;
+    }
+}
