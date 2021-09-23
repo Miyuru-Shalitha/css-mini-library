@@ -46,4 +46,71 @@
     &__input--tertiary:placeholder-shown + &__label--tertiary {
         @include fomrLabelTranslate;
     }
+
+    // INPUT WITH BUTTON
+    // Input with button primary
+    &__input-b--primary {
+        @include formInputWithButton;
+        border: 1px solid $color-primary;
+        outline-color: $color-primary;
+    }
+
+    &__button--primary {
+        @include formButton;
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+
+    &__label--primary {
+        color: $color-primary;
+        @include formLabel;
+    }
+
+    &__input-b--primary:placeholder-shown ~ &__label--primary {
+        @include fomrLabelTranslate;
+    }
+
+    // Input with button secondary
+    &__input-b--secondary {
+        @include formInputWithButton;
+        border: 1px solid $color-secondary;
+        outline-color: $color-secondary;
+    }
+
+    &__button--secondary {
+        @include formButton;
+        background-color: $color-secondary;
+        border: 1px solid $color-secondary;
+    }
+
+    &__label--secondary {
+        color: $color-secondary;
+        @include formLabel;
+    }
+
+    &__input-b--secondary:placeholder-shown ~ &__label--secondary {
+        @include fomrLabelTranslate;
+    }
+
+    // Input with button tertiary
+    &__input-b--tertiary {
+        @include formInputWithButton;
+        border: 1px solid $color-tertiary;
+        outline-color: $color-tertiary;
+    }
+
+    &__button--tertiary {
+        @include formButton;
+        background-color: $color-tertiary;
+        border: 1px solid $color-tertiary;
+    }
+
+    &__label--tertiary {
+        color: $color-tertiary;
+        @include formLabel;
+    }
+
+    &__input-b--tertiary:placeholder-shown ~ &__label--tertiary {
+        @include fomrLabelTranslate;
+    }
 }
