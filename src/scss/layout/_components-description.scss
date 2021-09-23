@@ -1,0 +1,9 @@
+.components-description {
+    background-color: $color-light-brown;
+    padding: $default-padding;
+
+    &__code-line {
+        font-size: $default-font-size;
+        letter-spacing: 2px;
+    }
+}

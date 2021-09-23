@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    padding: 1rem;
+
+    &__text-box {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,179 @@
+.btn {
+    // For button element.
+    &-b {
+        @include btnStyle;
+
+        transition: all 0.2s;
+    }
+
+    // For anchor element.
+    &-a {
+        &,
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            @include btnStyle;
+        }
+
+        transition: all 0.2s;
+    }
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-primary-light;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-secondary-light;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-tertiary {
+    background-color: $color-tertiary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-tertiary-light;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+// Button outlines.
+.btn-primary-out {
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+        background-color: $color-primary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-secondary-out {
+    background-color: transparent;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
+
+    &:hover {
+        background-color: $color-secondary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-tertiary-out {
+    background-color: transparent;
+    color: $color-tertiary;
+    border: 1px solid $color-tertiary;
+
+    &:hover {
+        background-color: $color-tertiary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+// Anchore button outlines.
+.btn-a-primary-out {
+    background-color: transparent;
+    color: $color-primary;
+    box-shadow: 0 0 1px 1px $color-primary;
+
+    &:hover {
+        background-color: $color-primary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-a-secondary-out {
+    background-color: transparent;
+    color: $color-secondary;
+    box-shadow: 0 0 1px 1px $color-secondary;
+
+    &:hover {
+        background-color: $color-secondary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
+
+.btn-a-tertiary-out {
+    background-color: transparent;
+    color: $color-tertiary;
+    box-shadow: 0 0 1px 1px $color-tertiary;
+
+    &:hover {
+        background-color: $color-tertiary-light;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}

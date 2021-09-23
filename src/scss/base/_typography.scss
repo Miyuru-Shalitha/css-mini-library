@@ -1,0 +1,14 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.heading-primary {
+    font-size: $heading-primary-font-size;
+    color: $color-white;
+    letter-spacing: 0.5rem;
+}
+
+.heading-secondary {
+    font-size: $heading-secondary-font-size;
+}

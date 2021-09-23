@@ -1,0 +1,17 @@
+@mixin btnStyle {
+    padding: $default-padding;
+    font-size: $default-font-size;
+    border: none;
+    border-radius: $default-border-radius;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
+    }
+}
