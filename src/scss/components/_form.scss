@@ -113,4 +113,83 @@
     &__input-b--tertiary:placeholder-shown ~ &__label--tertiary {
         @include fomrLabelTranslate;
     }
+
+    // RADIO BUTTONS
+    // Primary radio button
+    &__radio-input--primary {
+        display: none;
+    }
+
+    &__radio-label--primary {
+        @include radioLabel;
+        color: $color-primary;
+    }
+
+    &__radio-button--primary {
+        @include radioButton;
+        border: 5px solid $color-primary;
+
+        &::after {
+            @include radioButtonAfter;
+            background-color: $color-primary;
+        }
+    }
+
+    &__radio-input--primary:checked
+        + &__radio-label--primary
+        &__radio-button--primary::after {
+        opacity: 1;
+    }
+
+    // Secondary radio button
+    &__radio-input--secondary {
+        display: none;
+    }
+
+    &__radio-label--secondary {
+        @include radioLabel;
+        color: $color-secondary;
+    }
+
+    &__radio-button--secondary {
+        @include radioButton;
+        border: 5px solid $color-secondary;
+
+        &::after {
+            @include radioButtonAfter;
+            background-color: $color-secondary;
+        }
+    }
+
+    &__radio-input--secondary:checked
+        + &__radio-label--secondary
+        &__radio-button--secondary::after {
+        opacity: 1;
+    }
+
+    // Tertiary radio button
+    &__radio-input--tertiary {
+        display: none;
+    }
+
+    &__radio-label--tertiary {
+        @include radioLabel;
+        color: $color-tertiary;
+    }
+
+    &__radio-button--tertiary {
+        @include radioButton;
+        border: 5px solid $color-tertiary;
+
+        &::after {
+            @include radioButtonAfter;
+            background-color: $color-tertiary;
+        }
+    }
+
+    &__radio-input--tertiary:checked
+        + &__radio-label--tertiary
+        &__radio-button--tertiary::after {
+        opacity: 1;
+    }
 }

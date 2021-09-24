@@ -57,3 +57,37 @@
         box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.7);
     }
 }
+
+@mixin radioLabel {
+    padding: $default-padding;
+    font-size: 2rem;
+    color: $color-primary;
+    padding-right: 4rem;
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+
+@mixin radioButton {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0.7rem;
+    left: -2.5rem;
+}
+
+@mixin radioButtonAfter {
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
