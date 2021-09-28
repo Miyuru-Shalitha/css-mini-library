@@ -1,6 +1,8 @@
 .components-description {
     background-color: $color-light-brown;
     padding: $default-padding;
+    border-radius: $default-border-radius;
+    margin-top: 1rem;
 
     &__code-line {
         font-size: $default-font-size;
