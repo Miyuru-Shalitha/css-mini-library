@@ -8,7 +8,7 @@
     "build": "parcel build src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "D.D.M.S.P.Gunawardhana",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
